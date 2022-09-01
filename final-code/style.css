@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@font-face {
+  font-family:  "HK Grotesk";
+  src: url(hk-grotesk.woff2), url(hk-grotesk.woff);
+}
+
+body {
+	font-family: "HK Grotesk", Arial;
+	font-size: 36px;
+	line-height: 1.25;
+	
+	background-color: #ffffff;
+	color: #333333;
+}
+
+nav{
+  position: fixed;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1000000000001;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+nav h1, nav h2{
+  display: flex;
+}
+
+h1 span, h2 span{
+  width: 300px;
+  flex: 0 0  auto;
+  display: inline-block;
+  }
+  h2 span{
+    width: 400px;
+  }
+
+#fade, #fade2{
+  animation: fadeIn 5s;
+  font-family: 'Merriweather', serif;
+
+}
+
+figcaption:nth-child(1){
+  animation-delay: 0.3s;
+}
+figcaption:nth-child(2){
+  animation-delay: 0.6s;
+}
+figcaption:nth-child(3){
+  animation-delay: 0.9s;
+}
+ figcaption:nth-child(4){
+  animation-delay: 1.2s;
+}
+figcaption:nth-child(5){
+  animation-delay: 1.5s;
+}
+
+figure{
+  display:  inline-block;
+}
+
+.intro{
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+.intro.inview{
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.3s
+}
+
+
+.s3 .content{
+  display: flex;
+  grid-template-columns: 1;
+  grid-gap: 10px;
+  
+
+  
+}
+.project-one{
+  display: inline-block;
+  flex: 2;
+  border: #5982a0 solid;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 2%;
+}
+
+video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-two{
+  border: #5982a0 solid;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 2%;
+
+}
+.hide{
+  display: none;
+  color: #000;
+  background-color: transparent !important;
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  
+  
+}
+
+.project-one:hover,.hide{
+  background-color: black;
+  opacity: 0.9;
+  transition: 0.3s;
+   display: block; 
+   cursor: pointer;
+
+}
+.project-two:hover{
+  background-color: black;
+  opacity: 0.9;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.sthreehoone{
+  position: absolute;
+  margin-bottom: 45%;
+  color: #ffffff;
+}
+
+#css{
+  font-size: 1.7rem;
+}
+
+.appear{
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+
+
+.appear.inview{
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.3s
+}
+
+
+
+header{
+  position: fixed;
+  top: 356px;
+  left: 36px;
+  z-index: 1;
+  transition: color 0.5s;
+}
+header.white{
+  color: #ffffff;
+}
+section{
+  background-color: #fefae0;
+  min-height: 100vh;
+  padding: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+div.content{
+  position: relative;
+}
+div.square{
+  width: 100px;
+  height: 100px;
+  background-color: #adc178;
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  transition: 0.1s;
+}
+div.circle{
+  width: 100px;
+  height: 100px;
+  background-color: #2a9d8f;
+  position: absolute;
+  bottom: 50px;
+  right: -50px;
+  border-radius: 50%;
+}
+
+div.content img{
+  height: 1000px;
+  /* width: 1000px */
+  position: relative;
+}
+
+section.s2{
+  background-color: #faedcd;
+}
+section.s2 div.square{
+  background-color: #f27059
+}
+section.s2 div.circle{
+  background-color: #cce3de ;
+}
+
+section.s3{
+  background-color:  #f1faee;
+}
+
+.s3{
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+ .s3.inview{
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.5s
+}
+section.s3 div.square{
+  background-color: #c2c5aa;
+}
+section.s3 div.circle{
+  background-color: #333d29;
+}
+
+
+section.s4{
+  background-color: #f3f1f2;
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+section.s4.inview{
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.5s
+}
+
+section.s4 div.square{
+  background-color: #e71d36;
+}
+section.s4 div.circle{
+  background-color: #2ec4b6 ;
+}
+
+.secondhead{
+  text-align: center;
+
+}
+
+.s2 img{
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+
+div.progress{
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 0%;
+  height: 10px;
+  background-color: #333333;
+  z-index: 1;
+  transition: background-color 0.5s;
+}
+div.progress.white{
+  background-color: white;
+}
+
+
+/*CONTACT BOX*/
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 3px #474544;
+  max-width: 1200px;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 87.5px;
+  margin: 50px 0;
+}
+
+h1 {
+  color: #474544;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  border-bottom: solid 2px #474544;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill: #474544;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #474544;
+	color: #e84d00;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #474544;
+}
+
+:-moz-placeholder { 
+	color: #474544;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #474544;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #474544;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #474544;
+  color: #F2F3EB;
+}
+/*END CONTACT BOX*/
+
+
+.github{
+  position: fixed;
+  bottom: 0;
+  left: 95%;
+  
+  background: transparent;
+  width: 100%;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
