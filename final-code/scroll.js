@@ -60,7 +60,7 @@ document.addEventListener("scroll", function(){
 
   sections.forEach(section => {
     const topSection = section.offsetTop
-    const midSection = topSection + (section.offsetHeight / 6)
+    const midSection = topSection + (section.offsetHeight / 3)
     
     const distanceToSection = midViewport - midSection
     

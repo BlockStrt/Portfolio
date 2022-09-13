@@ -10,9 +10,12 @@ body {
 	font-family: "HK Grotesk", Arial;
 	font-size: 36px;
 	line-height: 1.25;
-	
 	background-color: #ffffff;
 	color: #333333;
+}
+
+a{
+  text-decoration: none !important;
 }
 
 nav{
@@ -42,6 +45,7 @@ h1 span, h2 span{
 #fade, #fade2{
   animation: fadeIn 5s;
   font-family: 'Merriweather', serif;
+  font-size: 50px
 
 }
 
@@ -108,7 +112,6 @@ video{
 
 }
 .hide{
-  display: none;
   color: #000;
   background-color: transparent !important;
   margin-top: 2rem;
@@ -135,7 +138,7 @@ video{
 .sthreehoone{
   position: absolute;
   margin-bottom: 45%;
-  color: #ffffff;
+  color: #000;
 }
 
 #css{
@@ -171,6 +174,7 @@ header.white{
 section{
   background-color: #fefae0;
   min-height: 100vh;
+  min-width: 100vw;
   padding: 80px;
 
   display: flex;
@@ -192,7 +196,7 @@ div.square{
 }
 div.circle{
   width: 100px;
-  height: 100px;
+  height: 90px;
   background-color: #2a9d8f;
   position: absolute;
   bottom: 50px;
@@ -479,4 +483,20 @@ textarea {
 }
 
 
-
+/* @media(max-width: 1091px){
+  nav span{
+    font-size: 15px;
+  }
+  #fade{
+    padding-top: 30px;
+    
+    font-size: 15px;
+  }
+  #fade2{
+    font-size: 15px;
+  }
+  .head-left{
+    font-size: 15px;
+    
+  }
+} */
