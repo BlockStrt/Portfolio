@@ -532,15 +532,21 @@ textarea {
 
 @media(max-width: 480px){
  
+
+  section{
+    padding-left: 0;
+    padding-right: 0;
+  }
   nav span{
     font-size: 10px;
     line-height: 1;
   }
-  .div.progress{
+  .header{
+    top: 10%;
     position: fixed;
-    font-size: 8px;
-    top: 0;
-    left: 0;
+  }
+  .head-left{
+    font-size: 15px;
   }
   .content .intro{
     font-size: 1px;
@@ -549,10 +555,11 @@ textarea {
   font-size: 12px;
  }
    #fade2{
-    left: 0;
   align-content: center;
   font-size: 15px;
   z-index: 10000;
+  padding-left: 20px;
+  padding-right: 20px;
  }
  .square{
   width: 50px !important;
@@ -563,18 +570,24 @@ textarea {
   height: 50px !important;
  }
 
+ figure{
+  margin: 0;
+ }
+
  .skills-appear{
+  display: grid;
   font-size: 15px;
-  margin: 20%;
+ }
+ .skills{
+  font-size: 10px !important;
+
+ }
+ .skillframe{
+  width: 20px !important;
+  height: 20px !important;
  }
  .content.appear{
-  display: flex;
- 
- }
- figure{
-  width: 20px;
-  height: 20px;
-  margin: 1;
+  /* display: flex; */
   left: 0;
  }
  .content.project{
@@ -582,10 +595,44 @@ textarea {
   height: 5px;
  };
  
- .s3{
-  
+ /* s3 section */
+ .sthreehoone{
+
+  font-size: 10px;
  }
+ video{
+  width: 100% !important;
+  height: 100% !important;
+ }
+ .project-one{
+  height: 200px;
+  width: 150px;
+  
+}
+ .project-two{
+  height: 200px;
+  width: 150px;
+}
+.content.project{
+  right: 30%;
+}
+.hide{
+  font-size: 15px;
+  
+}
  .s4{
   font-size: 10px;
+ }
+
+ .github{
+  display: block;
+  position: fixed;
+  bottom: 5%;
+  left: 80%;
+ }
+ .gitlogo{
+  
+  width: 50px;
+  height: 50px;
  }
 }
