@@ -94,10 +94,10 @@ figure{
 .project-one{
   display: inline-block;
   flex: 2;
-  border: #5982a0 solid;
-  width: 50rem;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  width: 50rem ;
   height: 50rem;
-  border-radius: 2%;
+  border-radius: 10%;
 }
 
 video{
@@ -107,10 +107,10 @@ video{
 }
 
 .project-two{
-  border: #5982a0 solid;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   width: 50rem;
   height: 50rem;
-  border-radius: 2%;
+  border-radius: 10%;
 
 }
 .hide{
@@ -487,51 +487,298 @@ textarea {
 
 
 @media(max-width: 2528px){
-
-
   section{
-    max-width: 100%;
-    overflow-x: hidden !important;
+    padding-left: 0;
+    padding-right: 0;
   }
- 
-  nav{
+  .header{
+    top: 20%;
     position: fixed;
-    
-  }
-
-  nav span{
-    font-size: 15px;
-  
-  }
-  #fade{
-    padding-top: 30px;
-    
-    /* font-size: 20px; */
-  }
-  #fade2{
-    /* font-size: 20px; */
   }
   .head-left{
-    /* font-size: 20px; */
+    font-size: 20px;
   }
-  .square{
-    width: 30px !important;
-    height: 30px !important;
+  #fade{
+    font-size: 18px;
+   }
+  #fade2{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .circle{
-    width: 30px !important;
-    height: 30px !important;
+  section.s1 div.square{
+    width: 30px;
+    height: 30px;
+   }
+   section.s1 div.circle{
+    width: 30px;
+    height: 30px;
+   }
+  
+  figure{
+    margin: 0;
+   }
+   section.s2 div.square{
+    width: 30px;
+    height: 30px;
+   }
+   section.s2 div.circle{
+    width: 30px;
+    height: 30px;
+   }
+   
+  
+   .skills-appear{
+    display: grid;
+    font-size: 20px;
+    margin-bottom: 20%;
+   }
+   .skills{
+    font-size: 20px !important;
+    padding-left: 2px;
+    padding-right: 2px;
+  
+   }
+   .skillframe{
+    width: 40px !important;
+    height: 40px !important;
+   }
+   .content.appear{
+    /* display: flex; */
+    left: 0;
+   }
+   .content.project{
+    width: 5px;
+    height: 5px;
+    justify-content: center;
+    margin-bottom: 30%;
+   };
+ 
+   video{
+    width: 100% !important;
+    height: 100% !important;
+   }
+   .project-one{
+    height: 30rem;
+    width: 50rem !important;
+    
   }
-  .github{
+   .project-two{
+    height: 30rem;
+    width: 50rem;
+    
+  }
+  .hide{
+    font-size: 22px;
+    font-weight: 700;
+    
+  }
+  section.s3 div.square{
+   display: none;
+   }
+   section.s3 div.circle{
+    width: 30px;
+    height: 30px;
+   }
+  .s4{
+    font-size: 18px;
+   }
+   section.s4 div.square{
+    width: 30px;
+    height: 30px;
+    }
+    section.s4 div.circle{
+     width: 30px;
+     height: 30px;
+    }
+  
+   .github{
+    display: block;
+    position: fixed;
+    bottom: 3%;
     left: 90%;
-  }
+   }
+   .gitlogo{
+    
+    width: 70px;
+    height: 70px;
+   }
+
 }
 
-@media(max-width: 680px){}
+@media(max-width: 820px){
+  section{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header{
+    top: 10%;
+    position: fixed;
+  }
+  .head-left{
+    font-size: 20px;
+  }
+  #fade{
+    font-size: 18px;
+   }
+  #fade2{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  figure{
+    margin: 0;
+   }
+  
+   .skills-appear{
+    display: grid;
+    font-size: 20px;
+    margin-bottom: 20%;
+   }
+   .skills{
+    font-size: 20px !important;
+  
+   }
+   .skillframe{
+    width: 40px !important;
+    height: 40px !important;
+   }
+   .content.appear{
+    /* display: flex; */
+    left: 0;
+   }
+   .content.project{
+    width: 5px;
+    height: 5px;
+    justify-content: center
+   };
+ 
+   video{
+    width: 100% !important;
+    height: 100% !important;
+   }
+   .project-one{
+    height: 400px;
+    width: 600px;
+    
+  }
+   .project-two{
+    height: 400px;
+    width: 600px;
+  }
+  .hide{
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .s3 .square{
+    display: none;
+    left: 100%;
+  }
+  .s4{
+    font-size: 18px;
+   }
+  
+   .github{
+    display: block;
+    position: fixed;
+    bottom: 3%;
+    left: 85%;
+   }
+   .gitlogo{
+    
+    width: 70px;
+    height: 70px;
+   }
+
+}
+
+@media(max-width: 680px){
+  section{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header{
+    top: 10%;
+    position: fixed;
+  }
+  .head-left{
+    font-size: 15px;
+  }
+  #fade{
+    font-size: 12px;
+   }
+  #fade2{
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  figure{
+    margin: 0;
+   }
+  
+   .skills-appear{
+    display: grid;
+    font-size: 15px;
+   }
+   .skills{
+    font-size: 15px !important;
+  
+   }
+   .skillframe{
+    width: 20px !important;
+    height: 20px !important;
+   }
+   .content.appear{
+    /* display: flex; */
+    left: 0;
+   }
+   .content.project{
+    width: 5px;
+    height: 5px;
+    justify-content: center
+   };
+ 
+   video{
+    width: 100% !important;
+    height: 100% !important;
+   }
+   .project-one{
+    height: 290px;
+    width: 350px;
+    
+  }
+   .project-two{
+    height: 300px;
+    width: 350px;
+  }
+  .hide{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .s3 .square{
+    display: none;
+    left: 100%;
+  }
+  .s4{
+    font-size: 15px;
+   }
+  
+   .github{
+    display: block;
+    position: fixed;
+    bottom: 3%;
+    left: 90%;
+   }
+   .gitlogo{
+    
+    width: 50px;
+    height: 50px;
+   }
+
+}
 
 
 @media(max-width: 480px){
- 
 
   section{
     padding-left: 0;
@@ -590,14 +837,14 @@ textarea {
   /* display: flex; */
   left: 0;
  }
+
+  /* s3 section */
  .content.project{
   width: 5px;
   height: 5px;
  };
  
- /* s3 section */
  .sthreehoone{
-
   font-size: 10px;
  }
  video{
