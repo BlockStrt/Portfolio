@@ -12,6 +12,7 @@ body {
 	line-height: 1.25;
 	background-color: #ffffff;
 	color: #333333;
+  overflow-x: hidden !important;
 }
 
 a{
@@ -45,7 +46,8 @@ h1 span, h2 span{
 #fade, #fade2{
   animation: fadeIn 5s;
   font-family: 'Merriweather', serif;
-  font-size: 50px
+  font-size: 50px;
+  
 
 }
 
@@ -176,7 +178,8 @@ section{
   min-height: 100vh;
   min-width: 100vw;
   padding: 80px;
-
+  overflow-x: hidden !important;
+  overflow-y: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -483,20 +486,106 @@ textarea {
 }
 
 
-/* @media(max-width: 1091px){
+@media(max-width: 2528px){
+
+
+  section{
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+ 
+  nav{
+    position: fixed;
+    
+  }
+
   nav span{
     font-size: 15px;
+  
   }
   #fade{
     padding-top: 30px;
     
-    font-size: 15px;
+    /* font-size: 20px; */
   }
   #fade2{
-    font-size: 15px;
+    /* font-size: 20px; */
   }
   .head-left{
-    font-size: 15px;
-    
+    /* font-size: 20px; */
   }
-} */
+  .square{
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .circle{
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .github{
+    left: 90%;
+  }
+}
+
+@media(max-width: 680px){}
+
+
+@media(max-width: 480px){
+ 
+  nav span{
+    font-size: 10px;
+    line-height: 1;
+  }
+  .div.progress{
+    position: fixed;
+    font-size: 8px;
+    top: 0;
+    left: 0;
+  }
+  .content .intro{
+    font-size: 1px;
+  }
+  #fade{
+  font-size: 12px;
+ }
+   #fade2{
+    left: 0;
+  align-content: center;
+  font-size: 15px;
+  z-index: 10000;
+ }
+ .square{
+  width: 50px !important;
+  height: 50px !important;
+ }
+ .circle{
+  width: 50px !important;
+  height: 50px !important;
+ }
+
+ .skills-appear{
+  font-size: 15px;
+  margin: 20%;
+ }
+ .content.appear{
+  display: flex;
+ 
+ }
+ figure{
+  width: 20px;
+  height: 20px;
+  margin: 1;
+  left: 0;
+ }
+ .content.project{
+  width: 5px;
+  height: 5px;
+ };
+ 
+ .s3{
+  
+ }
+ .s4{
+  font-size: 10px;
+ }
+}
