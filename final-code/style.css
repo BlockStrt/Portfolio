@@ -7,6 +7,7 @@
 }
 
 body {
+  width: 100%;
 	font-family: "HK Grotesk", Arial;
 	font-size: 36px;
 	line-height: 1.25;
@@ -97,10 +98,8 @@ figure{
 }
 .projectcontainer{
   display:flex;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
-  
-
 }
 video{
   width: 100%;
@@ -225,6 +224,8 @@ section.s2 div.circle{
 
 section.s3{
   background-color:  #f1faee;
+  
+  
 }
 
 .s3{
@@ -236,7 +237,7 @@ section.s3{
  .s3.inview{
   opacity: 1;
   transform: none;
-  transition-delay: 0.5s
+  transition-delay: 0.5s;
 }
 section.s3 div.square{
   background-color: #c2c5aa;
@@ -255,7 +256,8 @@ section.s4{
 section.s4.inview{
   opacity: 1;
   transform: none;
-  transition-delay: 0.5s
+  transition-delay: 0.5s;
+  font-size: 18px;
 }
 
 section.s4 div.square{
@@ -295,6 +297,10 @@ div.progress.white{
 
 
 /*CONTACT BOX*/
+/* .s4{
+  font-size: 24px;
+ } */
+ 
 button {
   overflow: visible;
 }
@@ -548,9 +554,7 @@ textarea {
     left: 0;
    }
    .content.project{
-    width: 5px;
     height: 5px;
-    justify-content: center;
     margin-bottom: 30%;
    };
 
@@ -577,9 +581,7 @@ textarea {
     height: 30px;
    }
   
-  .s4{
-    font-size: 18px;
-   }
+ 
    section.s4 div.square{
     width: 30px;
     height: 30px;
@@ -645,10 +647,12 @@ textarea {
     left: 0;
    }
    .content.project{
-    width: 5px;
     height: 5px;
-    justify-content: center
    };
+   .projectcontainer{
+    display: flex;
+    justify-content: center
+   }
  
    video{
     width: 100% !important;
@@ -730,10 +734,13 @@ textarea {
     left: 0;
    }
    .content.project{
-    width: 5px;
     height: 5px;
-    justify-content: center
-   };
+   }
+   .projectcontainer{
+    display: flex;
+    justify-content: center;
+   }
+ 
  
    video{
     width: 100% !important;
@@ -837,9 +844,12 @@ textarea {
 
   /* s3 section */
  .content.project{
-  width: 5px;
   height: 5px;
- };
+ }
+ .projectcontainer{
+  display: flex;
+  justify-content: center;
+ }
  
  .sthreehoone{
   font-size: 10px;
@@ -869,7 +879,7 @@ textarea {
   
 }
  .s4{
-  font-size: 10px;
+  font-size: 18px;
  }
 
  .github{
